@@ -1,0 +1,13 @@
+.polygon-stack {
+  &-parent {
+    position: absolute;
+    right: 1em;
+    top: 4em;
+    z-index: -1;
+  }
+
+  &-child {
+    position: relative;
+    // top: 0;
+  }
+}

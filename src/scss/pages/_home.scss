@@ -1,0 +1,40 @@
+span.school_name {
+  font-size: 4.6rem;
+  font-family: "Forum";
+}
+
+.landing {
+  display: flex;
+  height: 85vh;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  &-info {
+    width: 60%;
+    margin: 0 3em;
+    p {
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 175%;
+      text-align: justify;
+
+      margin-top: 2.5em;
+    }
+  }
+  &-img {
+    height: 100%;
+    width: 40%;
+    margin: 0 2em;
+    margin-top: 2.7em;
+    img {
+      width: 100%;
+      border-radius: 21px;
+      box-shadow: 18px 29px 50px 1px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &-button {
+    display: absolute;
+    right: 0;
+  }
+}

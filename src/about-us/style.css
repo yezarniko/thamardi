@@ -1,0 +1,330 @@
+:root {
+    --pri: #1794A5;
+    --secondary: #ffffff;
+    --text: #454443;
+    --background: #F0FDFD;
+    --orange: #f8bb44;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    /* background-color: aqua; */
+    margin: 0px 50px;
+}
+
+.nav-bar .logo {
+    height: 100%;
+}
+
+.nav-bar .btn-div {
+    width: 45%;
+    /* background-color: beige; */
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar .btn-div .btn {
+    border: 0px;
+    outline: none;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    color: #1794A5;
+    text-shadow: 0px 3px 33px rgb(0 0 0 / 25%);
+}
+
+.nav-bar .btn-div .btn-1 {
+    width: 167px;
+    border: 0px;
+    outline: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28px;
+    color: var(--pri);
+    background: #FFFFFF;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 93px;
+    padding: 10px;
+}
+
+.slide-one {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider-one.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-two {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider-two.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide-three {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slider-three.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-us-title {
+    width: 100%;
+    height: 50vh;
+    background-color: var(--background);
+    margin-top: 50px;
+}
+
+.carousel-caption {
+    top: 70%
+}
+
+.about {
+    height: fit-content;
+    margin: 100px;
+}
+
+.about h4,
+.about h1,
+.about p {
+    margin: auto;
+    text-align: center;
+}
+
+.about h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.photo-card-container {
+    position: relative;
+    height: 500px;
+}
+
+.photo-card-background {
+    position: absolute;
+    top: 200px;
+    background-color: var(--background);
+    width: 100%;
+    height: 300px;
+}
+
+.photo-card {
+    height: 50vh;
+    margin-bottom: 3rem;
+}
+
+.photo-card-left {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/card-left.jpg);
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-card-left:hover .photo-card-left-text {
+    top: 0%;
+    transform: translateY(9%);
+}
+
+.photo-card-left:hover .jar {
+    position: absolute;
+    top: -10%;
+    /* display: none; */
+}
+
+.photo-card-middle {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/card-mid.jpg);
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.photo-card-middle:hover .photo-card-middle-text {
+    top: 0%;
+    transform: translateY(9%);
+}
+
+.photo-card-right {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/card-right.jpg);
+    background-size: cover;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.photo-card-right:hover .photo-card-right-text {
+    top: 0%;
+    transform: translateY(9%);
+}
+
+.photo-card-left-text,
+.photo-card-middle-text,
+.photo-card-right-text {
+    position: absolute;
+    top: 100%;
+    width: 90%;
+    height: 85%;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 20px;
+    transition: 1s;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+}
+
+.history {
+    height: fit-content;
+    margin: 100px;
+}
+
+.history h4,
+.history h1,
+.history p {
+    margin: auto;
+    text-align: center;
+}
+
+.history h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.history p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.video-iframe {
+    width: 100%;
+    margin: auto;
+}
+
+.video-iframe iframe {
+    width: 100%;
+}
+
+.video-iframe p {
+    font-size: 25px;
+    margin: 50px auto;
+    text-align: center;
+    width: 600px;
+}
+
+.footer {
+    background-color: #F0FDFD;
+    width: 100%;
+    height: fit-content;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    padding: 50px;
+    margin-top: 50px;
+    color: var(--text);
+}
+
+.footer .footer-left {
+    width: 40%;
+}
+
+.footer .footer-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-left p {
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+.footer .footer-left .icons {
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-left .icons div {
+    width: 50px;
+    height: 50px;
+}
+
+.footer .footer-middle {
+    width: 40%;
+}
+
+.footer .footer-middle h3 {
+    border-bottom: 2px solid red;
+    width: fit-content;
+    padding: 5px 0px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer .footer-middle .contacts p i {
+    width: 50px;
+}
+
+.footer .footer-right {
+    width: 20%;
+}
+
+.footer .footer-right h3 {
+    border-bottom: 2px solid red;
+    width: fit-content;
+    padding: 5px 0px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer .footer-right li {
+    list-style: none;
+    height: 30px;
+}
+
+.footer .footer-right li a {
+    text-decoration: none;
+    color: var(--text);
+}

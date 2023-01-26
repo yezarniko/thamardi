@@ -1,0 +1,39 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Padauk:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+@import "../../node_modules/bootstrap/scss/functions";
+
+// colors
+$primary: #1794a5;
+$secondary: #454443;
+$headings-color: $primary;
+
+// Required
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// abstracts
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// typography
+* {
+  font-family: "Poppins";
+}
+
+// base
+@import "./layouts";
+@import "./components/nav";
+@import "./components/button";
+@import "./components/polygons";
+
+// pages
+@import "pages/home";
+@import "pages/scholarship";
+@import "pages/activities";
+@import "pages/about";
+
+// bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
