@@ -1,10 +1,35 @@
 .button {
   &-btn {
-    padding: 0.8em 1.2em;
     color: $primary;
     text-decoration: none;
     font-weight: 700;
+    font-size: 1.26rem;
+    padding: 1em 1.8em;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
     border-radius: 93px;
+  }
+}
+
+.search-btn {
+  width: 11.13em;
+  padding: 1em;
+  padding-left: 2.8em;
+  margin: 0 1.2em;
+  margin-right: 3.73em;
+
+  display: flex;
+  justify-content: space-between;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 93px;
+  svg {
+    width: 1.67em;
+    transform: rotate(88.5deg);
+    fill: $primary;
+  }
+  span {
+    color: $gray-500;
+    opacity: 50%;
   }
 }

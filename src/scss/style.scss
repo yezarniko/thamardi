@@ -5,12 +5,17 @@
 // colors
 $primary: #1794a5;
 $secondary: #454443;
+$pale-green: hsl(194, 49%, 90%);
 $headings-color: $primary;
 
 // Required
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/variables-dark";
 @import "../../node_modules/bootstrap/scss/mixins";
+
+:root {
+  font-size: 15px;
+}
 
 // abstracts
 * {
@@ -28,6 +33,7 @@ $headings-color: $primary;
 @import "./components/nav";
 @import "./components/button";
 @import "./components/polygons";
+@import "./components/eclipse";
 
 // pages
 @import "pages/home";
@@ -37,3 +43,12 @@ $headings-color: $primary;
 
 // bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}

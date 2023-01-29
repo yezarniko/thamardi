@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Padauk:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  font-size: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,28 +13,69 @@
   font-family: "Poppins";
 }
 
-nav div.container-fluid, nav div.container-xxl, nav div.container-xl, nav div.container-lg, nav div.container-md, nav div.container-sm {
+nav {
+  background-color: hsl(194deg, 49%, 90%);
+  font-size: 15px;
+  font-weight: 700;
+  height: 5.93em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 40px 40px;
+}
+
+.navs {
+  display: flex;
+}
+
+.nav-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav img.logo {
-  width: 200px;
+.nav-items li {
+  padding: 0 1.2em;
 }
-nav .nav-link {
-  font-weight: 700;
-}
-nav .button-btn {
-  margin: 1.5em;
+
+.logo {
+  width: 11.333em;
+  height: auto;
+  padding-top: 1em;
 }
 
 .button-btn {
-  padding: 0.8em 1.2em;
   color: #1794a5;
   text-decoration: none;
   font-weight: 700;
+  font-size: 1.26rem;
+  padding: 1em 1.8em;
   box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
   border-radius: 93px;
+}
+
+.search-btn {
+  width: 11.13em;
+  padding: 1em;
+  padding-left: 2.8em;
+  margin: 0 1.2em;
+  margin-right: 3.73em;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.25);
+  border-radius: 93px;
+}
+.search-btn svg {
+  width: 1.67em;
+  transform: rotate(88.5deg);
+  fill: #1794a5;
+}
+.search-btn span {
+  color: #adb5bd;
+  opacity: 50%;
 }
 
 .polygon-stack-parent {
@@ -43,23 +88,41 @@ nav .button-btn {
   position: relative;
 }
 
-span.school_name {
+.eclipse {
+  position: absolute;
+  top: 300;
+  left: -40;
+}
+
+.school_name-1 {
   font-size: 4.6rem;
   font-family: "Forum";
+}
+.school_name-2 {
+  font-weight: 400;
 }
 
 .landing {
   display: flex;
-  height: 85vh;
+  height: auto;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
+  margin-top: 14%;
+  justify-content: space-between;
+  margin-bottom: 8em;
+}
+.landing-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
 }
 .landing-info {
-  width: 60%;
-  margin: 0 3em;
+  width: 50%;
+  margin: 0 4em;
 }
 .landing-info p {
+  color: #454443;
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
@@ -71,7 +134,7 @@ span.school_name {
   height: 100%;
   width: 40%;
   margin: 0 2em;
-  margin-top: 2.7em;
+  margin-top: 1.5em;
 }
 .landing-img img {
   width: 100%;
@@ -79,8 +142,7 @@ span.school_name {
   box-shadow: 18px 29px 50px 1px rgba(0, 0, 0, 0.25);
 }
 .landing-button {
-  display: absolute;
-  right: 0;
+  margin-top: 1em;
 }
 
 /*!
@@ -3904,10 +3966,10 @@ textarea.form-control-lg {
 .navbar {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: #1794a5;
-  --bs-navbar-hover-color: #454443;
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
   --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
-  --bs-navbar-active-color: #454443;
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
   --bs-navbar-brand-padding-y: 0.3125rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
@@ -11692,6 +11754,14 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

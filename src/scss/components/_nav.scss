@@ -1,26 +1,35 @@
 nav {
-  div.container-fluid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  img.logo {
-    width: 200px;
-  }
-  .nav-link {
-    font-weight: 700;
-  }
-  .button-btn {
-    // @include button-outline-variant(
-    //   $color: $primary,
-    //   $active-background: $primary,
-    //   $active-border: $white
-    // );
-    margin: 1.5em;
-    // border-color: $white;
+  background-color: $pale-green;
+  font-size: 15px;
+  font-weight: 700;
+  height: 5.93em;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  width: 100%;
+
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 40px 40px;
+}
+
+.navs {
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    padding: 0 1.2em;
   }
 }
 
-$navbar-light-color: $primary;
-$navbar-light-hover-color: $secondary;
-$navbar-light-active-color: $secondary;
+.logo {
+  width: 11.333em;
+  height: auto;
+  padding-top: 1em;
+}
