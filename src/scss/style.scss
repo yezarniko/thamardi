@@ -17,6 +17,7 @@ $headings-color: $primary;
   font-size: 15px;
 }
 
+
 // abstracts
 * {
   margin: 0;
@@ -51,4 +52,13 @@ a {
 ul {
     list-style-type: none;
     margin-bottom: 0;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
