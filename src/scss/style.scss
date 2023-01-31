@@ -17,7 +17,6 @@ $headings-color: $primary;
   font-size: 15px;
 }
 
-
 // abstracts
 * {
   margin: 0;
@@ -35,12 +34,15 @@ $headings-color: $primary;
 @import "./components/button";
 @import "./components/polygons";
 @import "./components/eclipse";
+@import "./components/rectangular";
+@import "./components/smallthings";
 
 // pages
 @import "pages/home";
 @import "pages/scholarship";
 @import "pages/activities";
 @import "pages/about";
+@import "pages/footer";
 
 // bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -50,15 +52,31 @@ a {
 }
 
 ul {
-    list-style-type: none;
-    margin-bottom: 0;
+  list-style-type: none;
+  margin-bottom: 0;
 }
 
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
+// html {
+//     overflow: scroll;
+//     overflow-x: hidden;
+// }
+// ::-webkit-scrollbar {
+//     width: 0;  /* Remove scrollbar space */
+//     background: transparent;  /* Optional: just make scrollbar invisible */
+// }
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 1.4vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+}
+
+/* TO STYLE THE SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+  // background-color: rgba(69, 68, 67, 0.2);
+  background-color: rgba(23, 148, 165, 0.1);
+}
+
+/* TO STYLE THE SCROLLBAR THUMB */
+::-webkit-scrollbar-thumb {
+  background-color: #86c8bc;
+  border: 0.2vw solid hsl(169, 37%, 80%);
+  border-radius: 10vw;
 }
