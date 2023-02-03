@@ -1,0 +1,94 @@
+.posts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 12%;
+  width: 80%;
+  // height: 100vh; //temp
+}
+
+.post {
+  position: relative;
+  background-color: $white;
+  width: 290px;
+  height: 340px;
+  filter: drop-shadow(1px 1px 23px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+
+  &__date-tag {
+    position: absolute;
+    z-index: 2;
+    top: -10;
+    left: -30;
+  }
+
+  &__date {
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.266rem;
+    line-height: 30px;
+    z-index: 3;
+    top: 5;
+    &:hover {
+      color: $primary;
+      transition: 0.3s;
+    }
+  }
+
+  &__img {
+    &-container {
+      overflow: hidden;
+      z-index: -1;
+      border-radius: 10px 10px 5px 5px;
+    }
+    width: 100%;
+    height: 217px;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.5s ease-in;
+    z-index: -1;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+  &__title {
+    text-align: center;
+    font-size: 1.2rem;
+    color: $secondary;
+    font-weight: 700;
+    margin: 2em;
+    &:hover {
+      color: $primary;
+      transition: 0.3s;
+    }
+  }
+  &__btn {
+    color: $white;
+    background-color: $primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: 0.2em;
+
+    font-family: "Padauk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.25);
+
+    transition: 0.5s ease-in;
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+}

@@ -15,6 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -30,11 +31,22 @@
         <div class="navs">
           <div class="nav-items">
             <ul class="nav-items">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Scholarship</a></li>
-              <li><a href="#">Activities</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <a href="index.html">Home</a>
+                <div
+                  style="
+                    height: 3px;
+                    background-color: #1794a5;
+                    border-radius: 20px;
+                    width: 60%;
+                    margin: 0 auto;
+                  "
+                ></div>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="activities.html">Activities & News</a></li>
+              <li><a href="about-us/about-us.html">About Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
             </ul>
           </div>
           <div class="search-box">
@@ -61,7 +73,14 @@
           </div>
         </div>
       </nav>
-      <div style="max-width: 1376px; margin: 0 auto; z-index: 1">
+      <div
+        style="
+          max-width: 1376px;
+          margin: 0 auto;
+          z-index: 1;
+          scroll-behavior: smooth;
+        "
+      >
         <div class="landing">
           <div class="landing-info">
             <h2>
@@ -86,7 +105,9 @@
               </p>
 
               <div class="landing-button">
-                <a class="button-btn" href="#">Read More</a>
+                <a class="button-btn" href="about-us/about-us.html"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
@@ -274,11 +295,11 @@
         />
       </svg>
     </div>
-    <div>
-      <img src="img/backToTop.svg" width="90"/>
+    <div class="backtoTop-btn" onclick="window.scroll(0,0)">
+      <img src="img/backToTop.svg" width="90" />
     </div>
 
-    <div class="footer">
+    <div class="footer" id="contact-us">
       <div class="footer-left">
         <div class="mapouter">
           <iframe
@@ -331,7 +352,17 @@
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="#!">Home</a>
+            <a href="#!"
+              >Home
+              <div
+                style="
+                  height: 3px;
+                  background-color: #1794a5;
+                  border-radius: 20px;
+                  width: 35%;
+                "
+              ></div>
+            </a>
           </li>
           <li>
             <a href="#!">Services</a>
@@ -347,4 +378,21 @@
     </div>
     <div class="copyright">© 2023 Thamardi. All Rights reserved.</div>
   </body>
+  <script>
+    let mybutton = document.querySelector(".backtoTop-btn");
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || window.scrollY > 500) {
+        mybutton.style.display = "block";
+        nav.style.backgroundColor = "#d9ecf2";
+      } else {
+        mybutton.style.display = "none";
+        nav.style.backgroundColor = "white";
+      }
+    }
+  </script>
 </html>

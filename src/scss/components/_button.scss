@@ -33,3 +33,10 @@
     opacity: 50%;
   }
 }
+
+.backtoTop-btn {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  z-index: 3;
+}

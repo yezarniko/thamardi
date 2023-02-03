@@ -79,6 +79,13 @@ nav {
   opacity: 50%;
 }
 
+.backtoTop-btn {
+  position: fixed;
+  top: 80%;
+  right: 0;
+  z-index: 3;
+}
+
 .polygon-stack-parent {
   position: absolute;
   right: 1em;
@@ -344,6 +351,171 @@ nav {
   right: -50;
   z-index: -1;
   opacity: 0.6;
+}
+
+.native-english {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 12%;
+  padding: 2em;
+  width: 80%;
+  background: rgba(23, 148, 165, 0.1);
+  border-radius: 39px;
+}
+.native-english__flag {
+  position: absolute;
+  top: -60;
+  left: 55;
+}
+.native-english__info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+}
+.native-english__info h3, .native-english__info .h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.26rem;
+  line-height: 51px;
+  color: #454443;
+  margin-bottom: 0.6em;
+}
+.native-english__info p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 186%;
+  text-align: justify;
+}
+.native-english__img {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.olympic-math {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 12%;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+.olympic-math__img {
+  display: flex;
+  flex-direction: column;
+}
+.olympic-math__img img {
+  object-fit: cover;
+}
+.olympic-math__img h3, .olympic-math__img .h3 {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51px;
+  color: #454443;
+  margin: 0.6em 0;
+}
+.olympic-math__info {
+  width: 60%;
+}
+.olympic-math__info p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.133rem;
+  line-height: 186%;
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 12%;
+  width: 80%;
+}
+
+.post {
+  position: relative;
+  background-color: #fff;
+  width: 290px;
+  height: 340px;
+  filter: drop-shadow(1px 1px 23px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+}
+.post__date-tag {
+  position: absolute;
+  z-index: 2;
+  top: -10;
+  left: -30;
+}
+.post__date {
+  position: absolute;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.266rem;
+  line-height: 30px;
+  z-index: 3;
+  top: 5;
+}
+.post__date:hover {
+  color: #1794a5;
+  transition: 0.3s;
+}
+.post__img {
+  width: 100%;
+  height: 217px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: 0.5s ease-in;
+  z-index: -1;
+}
+.post__img-container {
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 10px 10px 5px 5px;
+}
+.post__img:hover {
+  transform: scale(1.5);
+}
+.post__title {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #454443;
+  font-weight: 700;
+  margin: 2em;
+}
+.post__title:hover {
+  color: #1794a5;
+  transition: 0.3s;
+}
+.post__btn {
+  color: #fff;
+  background-color: #1794a5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 0.2em;
+  font-family: "Padauk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 23px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease-in;
+  transform: scale(1);
+}
+.post__btn:hover {
+  transform: scale(1.15);
 }
 
 .footer {
@@ -12085,6 +12257,7 @@ ul {
   background-color: #86c8bc;
   border: 0.2vw solid hsl(169deg, 37%, 80%);
   border-radius: 10vw;
+  max-height: 20px;
 }
 
 /*# sourceMappingURL=index.css.map */
