@@ -30,7 +30,9 @@ nav {
 }
 
 .logo {
-  width: 11.333em;
-  height: auto;
-  padding-top: 1em;
+  img {
+    width: 100px;
+    height: auto;
+  }
+  padding-left: 2em;
 }

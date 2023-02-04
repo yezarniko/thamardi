@@ -42,9 +42,11 @@ nav {
 }
 
 .logo {
-  width: 11.333em;
+  padding-left: 2em;
+}
+.logo img {
+  width: 100px;
   height: auto;
-  padding-top: 1em;
 }
 
 .button-btn {
@@ -80,6 +82,7 @@ nav {
 }
 
 .backtoTop-btn {
+  display: none;
   position: fixed;
   top: 80%;
   right: 0;
@@ -432,8 +435,10 @@ nav {
 }
 
 .posts {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  row-gap: 7em;
   margin: 0 auto;
   margin-top: 12%;
   width: 80%;
@@ -516,6 +521,39 @@ nav {
 }
 .post__btn:hover {
   transform: scale(1.15);
+}
+
+.post-expand {
+  margin-top: 12%;
+}
+.post-expand__info {
+  margin-bottom: 4em;
+}
+.post-expand__info h4, .post-expand__info .h4 {
+  font-size: 2rem;
+  color: #454443;
+  text-align: center;
+}
+.post-expand__info i {
+  font-size: 1rem;
+  color: #454443;
+  font-weight: 700;
+}
+.post-expand__img {
+  width: 100%;
+  justify-self: center;
+  object-fit: cover;
+  border: 3px solid #fff;
+  filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.15));
+}
+.post-expand__img-box {
+  width: 100%;
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr 1fr;
+}
+.post-expand__back {
+  margin-top: 2em;
 }
 
 .footer {
@@ -12244,7 +12282,7 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 1.4vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+  width: 1vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
 }
 
 /* TO STYLE THE SCROLLBAR TRACK */
