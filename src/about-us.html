@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>Thamardi</title>
-    <link href="index.css" rel="stylesheet" />
+    <link href="about-us.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="logo.png"
@@ -15,12 +15,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+    <link href="index.css" rel="stylesheet" />
   </head>
   <body>
     <div class="landing-container">
@@ -34,8 +29,10 @@
               <li>
                 <a href="index.html">Home</a>
               </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="activities.html">Activities & News</a></li>
               <li>
-                <a href="services.html">Services</a>
+                <a href="about-us.html">About Us</a>
                 <div
                   style="
                     height: 3px;
@@ -46,10 +43,6 @@
                   "
                 ></div>
               </li>
-              <li>
-                <a href="activities.html">Activities & News</a>
-              </li>
-              <li><a href="about-us.html">About Us</a></li>
               <li><a href="#contact-us">Contact Us</a></li>
             </ul>
           </div>
@@ -83,47 +76,151 @@
           margin: 0 auto;
           z-index: 1;
           scroll-behavior: smooth;
-          width: 100%;
         "
       >
-        <div class="native-english">
-          <img
-            src="./img/ne_flag.png"
-            height="140"
-            class="native-english__flag"
-          />
-          <div class="native-english__info">
-            <h3>Native English</h3>
-            <p>
-              Our school has a special additional course that teaches students
-              English to English with native speaker Tr S.P. Teaching with
-              native English speaker is to improve all of four skills and can
-              speak to native English people bravely.
-            </p>
+        <div
+          id="thamardi-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-one">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>EVERYTHING YOU CAN IMAGINE IS REAL.</h1>
+              </div>
+            </div>
+            <div class="carousel-item slide-two">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>BLAZE YOUR PATH.</h1>
+              </div>
+            </div>
+            <div class="carousel-item slide-three">
+              <div class="carousel-caption d-none d-md-block">
+                <h1>BE VALUED. BE VITAL.</h1>
+              </div>
+            </div>
           </div>
-          <div class="native-english__img">
-            <img src="./img/ne.jpg" width="433" />
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#thamardi-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#thamardi-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="about">
+          <h4>Welcome to</h4>
+          <h1>Thamardi Private High School</h1>
+          <p>
+            Thamardi Private High School welcomes all students and their
+            families, celebrates diversity and promotes relationships built on
+            mutual respect. We believe everyone has the capacity to be creative.
+            Thamardi is a place where people use design to develop their own
+            creative potential.
+          </p>
+        </div>
+
+        <div class="photo-card-container">
+          <div class="photo-card-background"></div>
+          <div class="container mt-5 photo-card">
+            <div class="row h-100 photo-card-row">
+              <div class="col-sm photo-card-left">
+                <div class="photo-card-left-text">
+                  <h2>Mission</h2>
+                  <p>
+                    Our mission is to change the way education meets the future;
+                    to foster interdisciplinary, integrated thinking and
+                    innovative leadership; to engage fully in the global
+                    community; and to facilitate lifelong learning.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm photo-card-middle">
+                <div class="photo-card-middle-text">
+                  <h2>Vision</h2>
+                  <p>
+                    Our school will foster an environment to nurture individuals
+                    academically, socially, and emotionally so that they are
+                    equipped to tackle academic challenges and become productive
+                    members of society.
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm photo-card-right">
+                <div class="photo-card-right-text">
+                  <h2>
+                    <span style="color: #ed3833">Leader</span
+                    ><span style="color: #62bb46">in</span
+                    ><span style="color: #297dc5">Me</span>
+                  </h2>
+                  <p>
+                    It is based on principles and practices of personal,
+                    interpersonal and organizational effectiveness, and upon the
+                    powerful premise that every child possesses unique strengths
+                    and has the ability to be a leader.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="olympic-math">
-          <di class="olympic-math__img">
-            <img src="img/olympic-math.png" height="190" />
-            <h3>Olympic Math</h3>
-          </di>
-          <di class="olympic-math__info">
-            <p>
-              Olympic Math contests aim for critical thinking and logical
-              thinking. It can also help in school Mathematics subject and to
-              imporove your Mathematics skill. OM additional course is taught by
-              two teachers in our school. Tr Daw Nway Thizar Oo (BE Information
-              Technology) teaches for primary and for middle and high level.Tr
-              Daw Na Yu Khine (BE.Civil) teaches for middle and high level
-              olympic maths.
-            </p>
-          </di>
+
+        <div class="history">
+          <h1>The History of Thamardi</h1>
+          <p>
+            <span style="font-size: 1.2em; color: var(--pri)"
+              >Thamardi private hostel</span
+            >
+            was opened in the year 1955-56. There was only grade 9 and 10 when
+            it was started to open. The founders of Thamadi hostel are U Sein
+            Win (B.sc, Dip.Ed) and Daw Kyi Kyi Myint (B.Ed, M.Ed(Methodology)
+            Phillippines). In 2013-14, Meiktila Thamardi private hostel was
+            upgraded to private high school.
+          </p>
+          <p>
+            &emsp;In 2019-20, Thamardi Private High School (Mawlamyine) was
+            opened by the son of U Sein Win and Daw Kyi Kyi Myint, U Myo Thawtar
+            Win (B.Tech(Electronic Engineering) NUS(Singapore)) and his wife,
+            Daw Hnin Yee Lwin (B.A(English), DIM(Yangon University of
+            Economics)) as a branch of Thamardi Private High School (Meiktila).
+          </p>
+          <p>
+            Currently, Daw Mya Win (B.A, B.Ed) is working as the headmistress of
+            Thamardi Private High School (Mawlamyine).
+          </p>
+        </div>
+
+        <div class="video-iframe">
+          <iframe
+            title="Thamardi Short-1"
+            src="https://player.vimeo.com/video/445490300?dnt=1&amp;app_id=122963"
+            width="1200"
+            height="675"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+          <p>
+            "<span style="color: #ed3833">Leader</span
+            ><span style="color: #62bb46">in</span
+            ><span style="color: #297dc5">Me</span> is a process not a program
+            which could be able to improve the school from every perspective."
+          </p>
         </div>
       </div>
     </div>
+
     <div class="backtoTop-btn" onclick="window.scroll(0,0)">
       <img src="img/backToTop.svg" width="90" />
     </div>
@@ -187,7 +284,7 @@
             <a href="#!">Services</a>
           </li>
           <li>
-            <a href="#!">Activities </a>
+            <a href="#!">Activities</a>
           </li>
           <li>
             <a href="#aboutus">About Us</a>
@@ -197,9 +294,21 @@
     </div>
     <div class="copyright">© 2023 Thamardi. All Rights reserved.</div>
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
   <script>
     let mybutton = document.querySelector(".backtoTop-btn");
     let nav = document.querySelector("nav");
+    let kids_slider = document.querySelector(".kids-slider");
+    kids_slider.style.display = "block";
     window.onscroll = function () {
       scrollFunction();
     };

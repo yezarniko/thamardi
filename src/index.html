@@ -2,6 +2,7 @@
   <head>
     <title>Thamardi</title>
     <link href="index.css" rel="stylesheet" />
+    <link href="jquery.flipster.min.css" rel="stylesheet" />
     <link
       rel="shortcut icon"
       href="logo.png"
@@ -20,6 +21,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
     ></script>
   </head>
   <body>
@@ -196,7 +200,14 @@
         <div style="position: relative; margin-bottom: 20em">
           <div class="teaching-section">
             <div class="teaching-section__img">
-              <img src="./img/kids.png" width="433" />
+              <div class="kids-slider" style="display: block">
+                <ul>
+                  <li><img src="./img/slide1.png" width="433" /></li>
+                  <li><img src="./img/slide2.jpg" width="433" /></li>
+                  <li><img src="./img/slide3.jpg" width="433" /></li>
+                  <li><img src="./img/slide4.jpeg" width="433" /></li>
+                </ul>
+              </div>
             </div>
             <p class="teaching-section__info">
               “ Our school, Thamardi is a
@@ -352,17 +363,7 @@
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="#!"
-              >Home
-              <div
-                style="
-                  height: 3px;
-                  background-color: #1794a5;
-                  border-radius: 20px;
-                  width: 35%;
-                "
-              ></div>
-            </a>
+            <a href="index.html">Home </a>
           </li>
           <li>
             <a href="#!">Services</a>
@@ -378,9 +379,18 @@
     </div>
     <div class="copyright">© 2023 Thamardi. All Rights reserved.</div>
   </body>
+  <script src="jquery.flipster.min.js"></script>
   <script>
+    $(".kids-slider").flipster({
+      scrollwheel: false,
+      style: "carousel",
+      start: 1,
+    });
+
     let mybutton = document.querySelector(".backtoTop-btn");
     let nav = document.querySelector("nav");
+    let kids_slider = document.querySelector(".kids-slider");
+    kids_slider.style.display = "block";
     window.onscroll = function () {
       scrollFunction();
     };

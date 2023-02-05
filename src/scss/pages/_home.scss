@@ -172,10 +172,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10em 5em;
-  .teaching-section__info {
+  margin: 10em 0;
+  margin-right: 3em;
+  &__info {
     text-align: center;
-    width: 40%;
+    width: 60%;
     font-style: normal;
     font-weight: 500;
     font-size: 1.13rem;
@@ -184,6 +185,21 @@
     background: rgba(255, 255, 255, 0.59);
     box-shadow: 0px 1px 80px rgba(23, 148, 165, 0.4);
     border-radius: 5px;
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    .kids-slider {
+      width: 100%;
+      margin: 0 auto;
+      display: inline;
+      overflow: visible;
+    }
+    img {
+      height: 90%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 }
 
@@ -231,6 +247,14 @@
     }
     h3 {
       font-size: 1.8rem;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+    &:hover {
+      transform: scale(0.9);
     }
   }
   &__extra {
