@@ -167,8 +167,9 @@ h1 {
 }
 
 .history {
+    width: 80%;
     height: fit-content;
-    margin: 100px;
+    margin: 100px auto;
 }
 
 .history h4,
@@ -187,13 +188,13 @@ h1 {
 }
 
 .history p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
 .video-iframe {
-    width: 100%;
-    margin: auto;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .video-iframe iframe {
@@ -201,8 +202,7 @@ h1 {
 }
 
 .video-iframe p {
-    font-size: 25px;
-    margin: 50px auto;
+    font-size: 20px;
+    margin: 0 auto;
     text-align: center;
-    width: 600px;
 }

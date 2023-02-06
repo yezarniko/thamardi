@@ -93,6 +93,49 @@
   }
 }
 
+.TchelGyi {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__info {
+    width: 90%;
+    p {
+      margin: 0.8em auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-align: center;
+      line-height: 200%;
+      letter-spacing: 0.055em;
+    }
+  }
+  &__img {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+    h2 {
+      color: $secondary;
+      font-weight: 700;
+    }
+  }
+  &__tag {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(69, 68, 67, 0.7);
+    margin-bottom: 0.5em;
+  }
+}
+
 .outstanding-student {
   width: 100%;
   display: flex;
@@ -221,6 +264,7 @@
     text-align: left;
     line-height: 175%;
     color: $secondary;
+    @include first-letter;
   }
 }
 

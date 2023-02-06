@@ -30,6 +30,7 @@ $headings-color: $primary;
 
 // base
 @import "./layouts";
+@import "./mixins";
 @import "./components/nav";
 @import "./components/button";
 @import "./components/polygons";

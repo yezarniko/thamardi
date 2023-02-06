@@ -1,0 +1,5 @@
+.history {
+  p {
+    @include first-letter($primary);
+  }
+}

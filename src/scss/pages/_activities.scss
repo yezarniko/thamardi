@@ -59,7 +59,7 @@
     font-size: 1.2rem;
     color: $secondary;
     font-weight: 700;
-    margin: 2em;
+    margin: 2.2em;
     &:hover {
       color: $primary;
       transition: 0.3s;
@@ -72,10 +72,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     margin-bottom: 1em;
-    padding: 0.2em;
+    padding: 0.3em;
 
     font-family: "Padauk";
     font-style: normal;
@@ -122,7 +122,7 @@
     max-height: 500px;
     justify-self: center;
     object-fit: cover;
-    border: 3px solid $white;
+    border-radius: 3%;
     filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.15));
   }
   &__back {

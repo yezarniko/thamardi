@@ -209,6 +209,49 @@ nav {
   line-height: 175%;
 }
 
+.TchelGyi {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TchelGyi__info {
+  width: 90%;
+}
+.TchelGyi__info p {
+  margin: 0.8em auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 200%;
+  letter-spacing: 0.055em;
+}
+.TchelGyi__img {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.TchelGyi__img img {
+  width: 100%;
+  margin: 0 auto;
+}
+.TchelGyi__img h2, .TchelGyi__img .h2 {
+  color: #454443;
+  font-weight: 700;
+}
+.TchelGyi__tag {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(69, 68, 67, 0.7);
+  margin-bottom: 0.5em;
+}
+
 .outstanding-student {
   width: 100%;
   display: flex;
@@ -337,6 +380,10 @@ nav {
   line-height: 175%;
   color: #454443;
 }
+.teaching-section2__info::first-letter {
+  font-size: 200%;
+  color: #8a2be2;
+}
 
 .bordering {
   display: flex;
@@ -399,6 +446,10 @@ nav {
   font-size: 1.13rem;
   line-height: 186%;
   text-align: justify;
+}
+.offer_course__info p::first-letter {
+  font-size: 200%;
+  color: #8a2be2;
 }
 .offer_course__slide {
   width: 30%;
@@ -501,7 +552,11 @@ nav {
   font-weight: 500;
   font-size: 1.133rem;
   line-height: 186%;
-  text-align: center;
+  text-align: left;
+}
+.olympic-math__info p::first-letter {
+  font-size: 200%;
+  color: #4847a2;
 }
 
 .posts {
@@ -562,7 +617,7 @@ nav {
   font-size: 1.2rem;
   color: #454443;
   font-weight: 700;
-  margin: 2em;
+  margin: 2.2em;
 }
 .post__title:hover {
   color: #1794a5;
@@ -574,10 +629,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   margin-bottom: 1em;
-  padding: 0.2em;
+  padding: 0.3em;
   font-family: "Padauk";
   font-style: normal;
   font-weight: 700;
@@ -615,7 +670,7 @@ nav {
   max-height: 500px;
   justify-self: center;
   object-fit: cover;
-  border: 3px solid #fff;
+  border-radius: 3%;
   filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.15));
 }
 .post-expand__img-box {
@@ -626,6 +681,11 @@ nav {
 }
 .post-expand__back {
   margin-top: 2em;
+}
+
+.history p::first-letter {
+  font-size: 200%;
+  color: #1794a5;
 }
 
 .footer {
